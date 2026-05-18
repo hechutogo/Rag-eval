@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Secrets & local dagent / judge config (use sdk/config.example.yaml)
+sdk/config.yaml
+.env
+.env.*
+*.pem
+
+# Database & local runtime data
+server/data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+*.log
+/tmp/
+
+# Knowledge base exports & batch run artifacts (do not publish)
+docs/exports/
+docs/task_groups_plan.json
+docs/循环测试_14组分批规则.md
+all_chunks.json
+chunk_batches_*.json
+page*.json
+file_ids.txt
+file_list.txt
+task_groups.db
+
+# Ops scripts with embedded org/env (local batch runs only)
+server/scripts/batch_create_by_files.py
+server/scripts/batch_create_tasks.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
