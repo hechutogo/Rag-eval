@@ -1,6 +1,6 @@
 # RAG Eval Framework
 
-平台无关的 **RAG 评测平台**，面向 dagent 及任意兼容 HTTP 接口的 RAG 系统，提供检索层 + 生成层全指标评测、LLM 自动出题、单跳/多跳召回测试与循环压测能力。
+平台无关的 **RAG 评测平台**，面向 远程agent 及任意兼容 HTTP 接口的 RAG 系统，提供检索层 + 生成层全指标评测、LLM 自动出题、单跳/多跳召回测试与循环压测能力。
 
 | 使用方式 | 说明 |
 |----------|------|
@@ -9,7 +9,6 @@
 | **Python SDK** | `EvalRunner` + CLI，可嵌入 CI/CD |
 
 📖 **详细技术文档（万字级，含架构图与时序图）**：[docs/RAG-Eval平台技术规格说明书.md](./docs/RAG-Eval平台技术规格说明书.md)  
-📁 **方案、分批规则与数据导出**：[docs/](./docs/)
 
 ---
 
@@ -44,7 +43,7 @@
                              │ HTTP
                              ▼
                     ┌──────────────────┐
-                    │  dagent / 其他   │
+                    │  远程agent / 其他   │
                     │  RAG 平台        │
                     └──────────────────┘
 ```
@@ -140,9 +139,6 @@ class MyAdapter(RAGAdapter):
 | 文档 | 说明 |
 |------|------|
 | [RAG-Eval平台技术规格说明书.md](./docs/RAG-Eval平台技术规格说明书.md) | 架构、时序图、数据模型、API |
-| [循环测试_14组分批规则.md](./docs/循环测试_14组分批规则.md) | 远程 dagent 42 批次规划 |
-| [TUTORIAL.md](./docs/TUTORIAL.md) | 操作教程 |
-| [rag-eval-framework-design.md](./docs/rag-eval-framework-design.md) | 早期框架设计稿 |
 
 ---
 
